@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+  }
+  ul{
+    margin: auto;
+    padding: 0;
+  }
+  li{
+    list-style-type: none;
+    padding: 14px 0px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    padding: 14px 16px;
+  }
+  a:hover{
+    background-color: #666;
+    border-radius: 25px;
+  }
+  .container1 {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 5px;
+  }
+  .container-items1{
+    box-sizing: border-box;
+    flex-basis: 24%;
+  }
+  .searchnav{
+    display: flex;
+    background: #ccc;
+    border-radius: 5px;
+    padding: 14px 16px;
+    justify-content: flex-end;
+  }
+  .searchbar{
+    padding: 10px ;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    /* box-sizing: border-box; */
+  }
+  .searchbar:focus{
+    outline: none;
+  }
+  .inner-nav2{
+    display: flex;
+    padding: 10px 5px;
+  }
+  .inner-nav-items{
+    flex:1;
+  }
+  .biglist{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .biglist a{
+    flex:1;
+    margin: auto;
+  }
+  .biglistdropdown{
+    margin: auto;
+  }
+  .biglistdropdown select{
+    padding: 14px 16px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    position: relative;
+    margin-left: auto;
+  }
+  select:focus{
+    outline: none;
+  }
+  .cover1{
+    width: 100%;
+    min-height: 200px;
+  }
+  .cover2{
+    width: 100%;
+    min-height: 200px;
+    max-height: 350px;
+  }
+  .bottom-section{
+    background-color: #ccc;
+  }
+  .container2 {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 14px 16px;
+
+  }
+  .quick-links{
+    /* flex: 1; */
+    flex-basis: 15%;
+  }
+  .announcements{
+    /* flex: 3; */
+    text-align: justify;
+    flex-basis: 45%;
+  }
+  .coming-soon{
+    /* flex: 1; */
+    flex-basis: 35%;
+  }
+  .cover3{
+    width: 100%;
+    max-height: 200px;
+  }
+  .quick-link-nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .quick-link-navitem{
+    flex:1;
+    padding: 14px 0px;
+  }
+ 
+  @media only screen and (max-width: 600px) {
+    .biglist, .cover1{
+      display: none;
+    }
+    .quick-links{
+      flex-basis: 99%;
+    }
+    .announcements{
+      flex-basis: 99%;
+    }
+    .coming-soon{
+      flex-basis: 99%;
+    }
+    .container-items1{
+      flex-basis: 49%;
+    }
+    .searchnav{
+      font-size: 13px;
+    }
+    .searchbar{
+      width:50% ;
+    }
+    .cover3{
+      width:50%;
+    }
+  }
+  @media only screen and (min-width: 600px) {
+    .biglistdropdown{
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .biglistdropdown{
+      display: none;
+    }
+  }
